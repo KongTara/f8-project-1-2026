@@ -9,6 +9,11 @@
     --secondary-color: #4f5361;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -54,14 +59,7 @@ a {
     overflow: hidden;
 }
 
-/* ===================== Header =====================*/
-
-.header-wrap {
-    display: flex;
-    position: relative;
-    background: #e6f0ff;
-    height: 100vh;
-}
+/* ===================== header =====================*/
 
 .fixed-header {
     position: sticky;
@@ -112,7 +110,11 @@ a {
 /* ===================== Hero =====================*/
 
 .hero {
-    margin-top: 130px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #e6f0ff;
+    height: calc(100vh - 90px);
 }
 
 .hero .info {
